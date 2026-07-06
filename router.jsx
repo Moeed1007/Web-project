@@ -10,6 +10,7 @@ import AdminPanel from "./components/AdminPanel";
 import Jerseys from "./pages/Jerseys";
 import Accessories from "./pages/Accessories";
 import Sale from "./pages/Sale";
+import SearchResults from "./pages/SearchResults";
 
 const router = createBrowserRouter([
   // Customer Routes
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   { path: "/jerseys", element: <Jerseys /> },
 { path: "/accessories", element: <Accessories /> },
 { path: "/sale", element: <Sale /> },
+{ path: "/search", element: <SearchResults /> },
   
   // Admin Routes
   {
