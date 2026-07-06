@@ -75,7 +75,23 @@ function Navbar() {
                 </li>
               ))}
             </ul>
-
+<form
+  className="d-flex me-3"
+  onSubmit={(e) => {
+    e.preventDefault();
+    const value = e.target.search.value;
+    if (value.trim() !== "") {
+      window.location.href = `/search?q=${value}`;
+    }
+  }}
+>
+  <input
+    name="search"
+    className="form-control"
+    type="search"
+    placeholder="Search products..."
+  />
+</form>
             <Link to="/login" className="btn btn-outline-dark me-2">
               Login
             </Link>
